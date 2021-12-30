@@ -1,15 +1,28 @@
 import { FC } from 'react';
-import { LogoIcon } from 'ui-kit/icons';
+import { CartIcon, HeartIcon, LogoIcon, SearchIcon } from 'ui-kit/icons';
 import { Hamburger } from './hamburger';
-import { HeaderStyled, LogoLink } from './Header.style';
+import { IconLink, HeaderStyled, LogoLink, IconButton, LeftMenu, RightMenu } from './Header.style';
 
 export const Header: FC = () => {
 	return (
 		<HeaderStyled>
-			<Hamburger />
+			<LeftMenu>
+				<Hamburger />
+				<IconButton>
+					<SearchIcon />
+				</IconButton>
+			</LeftMenu>
 			<LogoLink to="/">
 				<LogoIcon />
 			</LogoLink>
+			<RightMenu>
+				<IconLink to="/favorite">
+					<HeartIcon />
+				</IconLink>
+				<IconLink to="/cart">
+					<CartIcon />
+				</IconLink>
+			</RightMenu>
 		</HeaderStyled>
 	);
 };
