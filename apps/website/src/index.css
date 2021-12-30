@@ -1,0 +1,16 @@
+:root {
+  --color-basic-500: #26251C;
+  --color-danger-500: #EB0A44;
+  --color-warn-500: #F2643D;
+  --color-info-500: #1693A7;
+  --color-success-500: #A0E8B7;
+
+  --font-primary: 'Rubik', sans-serif;
+  --font-secondary: 'Montserrat', sans-serif;
+  --font-weight-extra-light: 200;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+}

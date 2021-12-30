@@ -1,11 +1,15 @@
 import { FC } from 'react';
 import { LogoIcon } from 'ui-kit/icons';
-import { HeaderStyled } from './Header.style';
+import { Hamburger } from './hamburger';
+import { HeaderStyled, LogoLink } from './Header.style';
 
 export const Header: FC = () => {
 	return (
 		<HeaderStyled>
-			<LogoIcon />
+			<Hamburger />
+			<LogoLink to="/">
+				<LogoIcon />
+			</LogoLink>
 		</HeaderStyled>
 	);
 };
