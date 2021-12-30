@@ -11,7 +11,7 @@ export const HeaderStyled = styled.header`
 	top: 0;
 `;
 
-export const Cotnent = styled.div`
+export const ContentStyled = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -22,17 +22,17 @@ export const Cotnent = styled.div`
 	margin: 0 auto;
 `;
 
-export const LeftMenu = styled.div`
+export const LeftMenuStyled = styled.div`
 	display: flex;
 	align-items: center;
 `;
 
-export const RightMenu = styled.div`
+export const RightMenuStyled = styled.div`
 	display: flex;
 	align-items: center;
 `;
 
-export const IconButton = styled.button`
+export const IconButtonStyled = styled.button`
 	display: block;
 	width: ${rem(20)};
 	padding: ${rem(10)};
@@ -42,14 +42,14 @@ export const IconButton = styled.button`
 	cursor: pointer;
 `;
 
-export const LogoLink = styled(Link)`
+export const LogoLinkStyled = styled(Link)`
 	display: block;
 	width: ${rem(16)};
 	color: var(--color__basic-900);
 	padding: 0 ${rem(10)};
 `;
 
-export const IconLink = styled(Link)`
+export const IconLinkStyled = styled(Link)`
 	display: block;
 	width: ${rem(20)};
 	color: var(--color__basic-900);
