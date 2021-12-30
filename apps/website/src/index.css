@@ -15,4 +15,7 @@
   --font-weight-medium: 500;
   --font-weight-semi-bold: 600;
   --font-weight-bold: 700;
+
+  --min-width: 320px;
+  --max-width: 1500px;
 }

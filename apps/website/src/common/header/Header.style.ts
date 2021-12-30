@@ -4,16 +4,22 @@ import styled from 'styled-components';
 
 export const HeaderStyled = styled.header`
 	border-bottom: ${rem(1)} solid var(--color__basic-200);
-	justify-content: space-between;
 	position: fixed;
 	width: 100%;
 	left: 0;
 	z-index: 1;
+	top: 0;
+`;
+
+export const Cotnent = styled.div`
 	display: flex;
 	align-items: center;
-	top: 0;
-	padding: ${rem(15)} ${rem(20)};
+	justify-content: space-between;
 	box-sizing: border-box;
+	padding: ${rem(15)} ${rem(20)};
+	min-width: var(--min-width);
+	max-width: var(--max-width);
+	margin: 0 auto;
 `;
 
 export const LeftMenu = styled.div`
