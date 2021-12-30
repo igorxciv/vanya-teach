@@ -86,7 +86,9 @@
     {
       "files": ["*.story.ts", "*.story.tsx"],
       "rules": {
-        "import/no-default-export": "off"
+        "import/no-default-export": "off",
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "@typescript-eslint/explicit-module-boundary-types": "off"
       }
     }
   ],
