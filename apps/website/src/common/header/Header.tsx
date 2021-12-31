@@ -1,4 +1,4 @@
-import { FC, useState } from 'react';
+import { FC, useCallback, useState } from 'react';
 import { CartIcon, HeartIcon, SearchIcon } from 'ui-kit/icons';
 import { Hamburger } from './hamburger';
 import { IconLinkStyled, HeaderStyled, IconButtonStyled, LeftMenuStyled, RightMenuStyled, ContentStyled } from './Header.style';
@@ -9,7 +9,7 @@ export const Header: FC = () => {
 	const [mobileMenuOpened, setMobileMenuOpened] = useState(false);
 
 	const openMobileMenuHandler = (): void => setMobileMenuOpened(true);
-	const closeMobileMenuHandler = (): void => setMobileMenuOpened(false);
+	const closeMobileMenuHandler = useCallback((): void => setMobileMenuOpened(false), []);
 
 	return (
 		<HeaderStyled>
