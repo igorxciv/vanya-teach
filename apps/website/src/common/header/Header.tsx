@@ -8,13 +8,14 @@ import { MobileMenu } from './mobile-menu';
 export const Header: FC = () => {
 	const [mobileMenuOpened, setMobileMenuOpened] = useState(false);
 
-	const toggleMobileMenuHandler = (): void => setMobileMenuOpened((opened) => !opened);
+	const openMobileMenuHandler = (): void => setMobileMenuOpened(true);
+	const closeMobileMenuHandler = (): void => setMobileMenuOpened(false);
 
 	return (
 		<HeaderStyled>
 			<ContentStyled>
 				<LeftMenuStyled>
-					<Hamburger onClick={toggleMobileMenuHandler} />
+					<Hamburger onClick={openMobileMenuHandler} />
 					<IconButtonStyled>
 						<SearchIcon />
 					</IconButtonStyled>
@@ -30,7 +31,7 @@ export const Header: FC = () => {
 				</RightMenuStyled>
 			</ContentStyled>
 
-			<MobileMenu opened={mobileMenuOpened} onClose={toggleMobileMenuHandler} />
+			<MobileMenu opened={mobileMenuOpened} onClose={closeMobileMenuHandler} />
 		</HeaderStyled>
 	);
 };

@@ -1,3 +1,4 @@
+import { useLocationChange } from 'lib/navigation';
 import { noop } from 'lib/noop';
 import { FC, ReactElement, useRef } from 'react';
 import { createPortal } from 'react-dom';
@@ -16,6 +17,8 @@ export const MobileMenu: FC<Props> = (props: Props) => {
 
 	const sidebarRef = useRef<HTMLDivElement>(null);
 	const overlayRef = useRef<HTMLDivElement>(null);
+
+	useLocationChange(onClose);
 
 	const sidebarMenu = (
 		<Transition in={opened} nodeRef={sidebarRef} mountOnEnter unmountOnExit timeout={{ exit: TransitionDuration.MobileMenuOpen }}>
