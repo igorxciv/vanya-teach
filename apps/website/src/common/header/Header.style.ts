@@ -9,6 +9,7 @@ export const HeaderStyled = styled.header`
 	left: 0;
 	z-index: 1;
 	top: 0;
+	background-color: var(--color__basic-100);
 `;
 
 export const ContentStyled = styled.div`

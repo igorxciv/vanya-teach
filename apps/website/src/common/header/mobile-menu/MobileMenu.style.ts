@@ -1,4 +1,4 @@
-import { cssVar, transparentize } from 'polished';
+import { transparentize } from 'polished';
 import styled, { css } from 'styled-components';
 import { TransitionDuration } from './constants';
 
@@ -23,7 +23,7 @@ export const OverlayStyled = styled.div<{ state: string }>`
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: ${transparentize(0.85, cssVar('--color__basic-900').toString())};
+	background-color: ${transparentize(0.85, '#191919')};
 	z-index: 1;
 	cursor: pointer;
 	opacity: 0;
